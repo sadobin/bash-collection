@@ -19,3 +19,20 @@ $ dirbruter.sh example.com admin.txt
 [+] 404 -> example.com/Admin
 [+] 404 -> example.com/Administrator
 ```
+
+## verb-tamper.sh
+Used for testing numerous HTTP methods on the server.
+
+**Example:**
+```
+$ verb-tamper.sh example.com
+[+] 200 -> GET: example.com
+[+] 411 -> POST: example.com
+[+] 200 -> HEAD: example.com
+[+] 504 -> PUT: example.com
+[+] 200 -> OPTIONS: example.com
+[+] 404 -> CONNECT: example.com
+[+] 405 -> TRACE: example.com
+[+] 405 -> DELETE: example.com
+[+] 405 -> PATCH: example.com
+```
